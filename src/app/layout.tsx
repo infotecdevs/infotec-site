@@ -22,7 +22,7 @@ export default function RootLayout({
         <ThemeProvider enableSystem={true} attribute="class">
           <main className="h-screen w-full flex flex-col dark:bg-black">
             <Header />
-            <div className="flex-1 flex items-center justify-center">
+            <div className="container flex-1 flex items-center justify-center mt-20">
               {children}
             </div>
           </main>
