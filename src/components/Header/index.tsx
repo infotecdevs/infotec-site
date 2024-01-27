@@ -16,9 +16,14 @@ const Header = () => {
     <header className="fixed top-0 w-[100%] z-10 text-[#7F23CE]">
       <nav className="flex justify-between items-center py-4 px-4">
         <div className="flex items-center gap-5">
-          <Link href={"/"} className="text-[24px] font-bold">
+          {/* <Link href={"/"} className="text-[24px] font-bold">
             InfotecDevs
-          </Link>
+          </Link> */}
+          <img
+            className="object-cover object-center rounded w-30 h-20"
+            alt="imagem"
+            src="/images/logo-completo.jpeg"
+          />
           <div className="hidden md:flex gap-6 font-semibold border-l border-gray-400 pl-4">
             <Link href={"/about"} className="hover:text-black">
               Sobre
@@ -35,7 +40,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex gap-5">
-          {currentTheme === "dark" ? (
+          {/* {currentTheme === "dark" ? (
             <button
               onClick={() => setTheme("light")}
               className="bg-slate-100 p-2 rounded-full"
@@ -49,7 +54,7 @@ const Header = () => {
             >
               <RiMoonFill size={16} />
             </button>
-          )}
+          )} */}
           <Link
             href={"/message"}
             className="font-semibold hidden md:flex text-red-500 border border-red-500 px-4 py-1 rounded-[5px] items-center gap-2 transition duration-200"

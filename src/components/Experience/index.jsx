@@ -1,8 +1,6 @@
-
-
 const Experience = () => {
   return (
-    <div className="dark:bg-black text-white dark:text-white py-14">
+    <div className="text-white py-14">
       <div className="container">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-3">
           {/* first col */}
