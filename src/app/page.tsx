@@ -4,7 +4,7 @@ import Experience from "@/components/Experience/index";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="flex flex-col mx-5">
       <Hero />
       <Skill />
       <Experience />

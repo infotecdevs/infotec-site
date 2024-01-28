@@ -1,5 +1,5 @@
 "use state";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { useTheme } from "next-themes";
@@ -11,53 +11,60 @@ const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [toggle, setToggle] = useState(false);
+  const [scrollingDown, setScrollingDown] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolledDown = window.scrollY > 0;
+      setScrollingDown(scrolledDown);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="fixed top-0 w-[100%] z-10 text-[#7F23CE]">
-      <nav className="flex justify-between items-center py-4 px-4">
+    <header className="fixed top-0 w-[100%] z-10 text-violet-950 md:relative">
+      <nav className="flex justify-between items-center py-4 px-4 mx-5">
         <div className="flex items-center gap-5">
-          {/* <Link href={"/"} className="text-[24px] font-bold">
-            InfotecDevs
-          </Link> */}
           <img
-            className="object-cover object-center rounded w-30 h-20"
+            className={`object-cover object-center rounded w-30 h-20 transition-opacity duration-300 ${
+              !scrollingDown ? "opacity-100" : "opacity-0"
+            } md:opacity-100`}
             alt="imagem"
             src="/images/logo-completo.jpeg"
           />
-          <div className="hidden md:flex gap-6 font-semibold border-l border-gray-400 pl-4">
-            <Link href={"/about"} className="hover:text-black">
+          <div className="hidden md:flex gap-10 font-bold border-l-[2px] border-violet-950 text-violet-950 pl-10">
+            <Link
+              href={"/about"}
+              className="hover:text-violet-800 hover:scale-125"
+            >
               Sobre
             </Link>
-            <Link href={"/work"} className="hover:text-black">
+            <Link
+              href={"/work"}
+              className="hover:text-violet-800 hover:scale-125"
+            >
               Projetos
             </Link>
-            <Link href={"/team"} className="hover:text-black">
+            <Link
+              href={"/team"}
+              className="hover:text-violet-800 hover:scale-125"
+            >
               Nosso Time
             </Link>
-            <Link href={"/contact"} className="hover:text-black">
+            {/* <Link href={"/contact"} className="hover:text-black">
               Contato
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="flex gap-5">
-          {/* {currentTheme === "dark" ? (
-            <button
-              onClick={() => setTheme("light")}
-              className="bg-slate-100 p-2 rounded-full"
-            >
-              <RiSunLine size={16} color="black" />
-            </button>
-          ) : (
-            <button
-              onClick={() => setTheme("dark")}
-              className="bg-slate-100 p-2 rounded-full"
-            >
-              <RiMoonFill size={16} />
-            </button>
-          )} */}
           <Link
             href={"/message"}
-            className="font-semibold hidden md:flex text-red-500 border border-red-500 px-4 py-1 rounded-[5px] items-center gap-2 transition duration-200"
+            className="font-semibold hidden md:flex text-red-500 border border-red-500 px-4 py-1 rounded-[5px] items-center gap-2 transition duration-200 hover:text-violet-800 hover:scale-110 hover:border-violet-800"
           >
             <MdOutlineMailOutline />
             E-mail
@@ -66,12 +73,16 @@ const Header = () => {
         <div className="sm:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <IoClose
-              className="w-[28px] h-[28px] object-contain"
+              className={`w-[32px] h-[32px] object-contain transition-opacity duration-300 ${
+                scrollingDown ? "opacity-75" : ""
+              }`}
               onClick={() => setToggle(!toggle)}
             />
           ) : (
             <GiHamburgerMenu
-              className="w-[28px] h-[28px] object-contain"
+              className={`w-[28px] h-[28px] object-contain transition-opacity duration-300 ${
+                scrollingDown ? "opacity-75" : ""
+              }`}
               onClick={() => setToggle(!toggle)}
             />
           )}
@@ -79,9 +90,9 @@ const Header = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-black absolute top-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+            } p-6 bg-violet-950 text-white absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar`}
           >
-            <div className="list-none flex justify-end items-start flex-1 flex-col">
+            <div className="list-none flex justify-end items-start flex-1 flex-col gap-1">
               <Link href={"/about"} className="hover:text-black">
                 Sobre
               </Link>

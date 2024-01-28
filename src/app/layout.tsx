@@ -20,11 +20,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={inter.className}>
         <ThemeProvider enableSystem={true} attribute="class">
-          <main className="h-screen w-full flex flex-col">
+          <main className="h-screen flex flex-col">
             <Header />
-            <div className="container flex-1 flex items-center justify-center mt-20">
-              {children}
-            </div>
+            <div className="flex-1 mt-32">{children}</div>
           </main>
         </ThemeProvider>
       </body>
