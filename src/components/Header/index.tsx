@@ -26,32 +26,53 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      const navbarElement = document.getElementById("navbar");
+
+      // Verificar se o clique ocorreu fora da div
+      if (navbarElement && !navbarElement.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+
+    // Adicionar event listener global
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remover event listener quando o componente for desmontado
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <header className="fixed top-0 w-[100%] z-10 text-violet-950 md:relative">
-      <nav className="flex justify-between items-center py-4 px-4 mx-5">
+    <header className="fixed top-0 w-full z-10 text-violet-950 md:relative">
+      <nav className="flex justify-between items-center py-1 px-1 md:mx-5">
         <div className="flex items-center gap-5">
-          <img
-            className={`object-cover object-center rounded w-30 h-20 transition-opacity duration-300 ${
-              !scrollingDown ? "opacity-100" : "opacity-0"
-            } md:opacity-100`}
-            alt="imagem"
-            src="/images/logo-completo.jpeg"
-          />
+          <Link href="/">
+            <img
+              className={`object-cover object-center rounded w-40 h-full transition-opacity duration-300 ${
+                !scrollingDown ? "opacity-100" : "opacity-0"
+              } md:opacity-100`}
+              alt="imagem"
+              src="/images/logo2.png"
+            />
+          </Link>
           <div className="hidden md:flex gap-10 font-bold border-l-[2px] border-violet-950 text-violet-950 pl-10">
             <Link
-              href={"/about"}
+              href="/about"
               className="hover:text-violet-800 hover:scale-125"
             >
               Sobre
             </Link>
             <Link
-              href={"/work"}
+              href="/works"
               className="hover:text-violet-800 hover:scale-125"
             >
               Projetos
             </Link>
             <Link
-              href={"/team"}
+              href="/team"
               className="hover:text-violet-800 hover:scale-125"
             >
               Nosso Time
@@ -63,14 +84,14 @@ const Header = () => {
         </div>
         <div className="flex gap-5">
           <Link
-            href={"/message"}
+            href="/contact"
             className="font-semibold hidden md:flex text-red-500 border border-red-500 px-4 py-1 rounded-[5px] items-center gap-2 transition duration-200 hover:text-violet-800 hover:scale-110 hover:border-violet-800"
           >
             <MdOutlineMailOutline />
             E-mail
           </Link>
         </div>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center mb-5">
           {toggle ? (
             <IoClose
               className={`w-[32px] h-[32px] object-contain transition-opacity duration-300 ${
@@ -88,21 +109,38 @@ const Header = () => {
           )}
 
           <div
+            id="navbar"
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 bg-violet-950 text-white absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar`}
           >
             <div className="list-none flex justify-end items-start flex-1 flex-col gap-1">
-              <Link href={"/about"} className="hover:text-black">
+              <Link
+                onClick={() => setToggle(false)}
+                href="/about"
+                className="hover:text-black"
+              >
                 Sobre
               </Link>
-              <Link href={"/work"} className="hover:text-black">
+              <Link
+                onClick={() => setToggle(false)}
+                href="/works"
+                className="hover:text-black"
+              >
                 Projetos
               </Link>
-              <Link href={"/team"} className="hover:text-black">
+              <Link
+                onClick={() => setToggle(false)}
+                href="/team"
+                className="hover:text-black"
+              >
                 Nosso Time
               </Link>
-              <Link href={"/contact"} className="hover:text-black">
+              <Link
+                onClick={() => setToggle(false)}
+                href="/contact"
+                className="hover:text-black"
+              >
                 Contato
               </Link>
             </div>

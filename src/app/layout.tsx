@@ -22,7 +22,7 @@ export default function RootLayout({
         <ThemeProvider enableSystem={true} attribute="class">
           <main className="h-screen flex flex-col">
             <Header />
-            <div className="flex-1 mt-32">{children}</div>
+            <div className="flex-1 mt-32 md:mt-0">{children}</div>
           </main>
         </ThemeProvider>
       </body>

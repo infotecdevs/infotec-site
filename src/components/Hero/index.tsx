@@ -17,7 +17,7 @@ const Hero = () => {
   };
   return (
     <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
-      <div className="mx-5">
+      <div className="mx-2 md:mx-5">
         <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
           {/* content - start */}
           <div className="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
@@ -52,7 +52,7 @@ const Hero = () => {
             <img
               src="/images/violet.png"
               loading="lazy"
-              alt="Photo by Fakurian Design"
+              alt="imagem"
               className="h-full w-full object-cover object-center"
             />
           </div>
