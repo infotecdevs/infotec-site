@@ -6,7 +6,7 @@ const skillsData = [
   {
     name: "Estilos Diversificados",
     icon: (
-      <FaCameraRetro className="text-5xl text-orange-700 group-hover:text-white duration-300" />
+      <FaCameraRetro className="text-5xl text-violet-950 group-hover:text-white duration-300" />
     ),
     link: "#",
     description:
@@ -15,7 +15,7 @@ const skillsData = [
   {
     name: "Técnica Impecável",
     icon: (
-      <GiNotebook className="text-5xl text-orange-700 group-hover:text-white duration-300" />
+      <GiNotebook className="text-5xl text-violet-950 group-hover:text-white duration-300" />
     ),
     link: "#",
     description:
@@ -24,7 +24,7 @@ const skillsData = [
   {
     name: "Experiência Personalizada",
     icon: (
-      <SlNote className="text-5xl text-orange-700 group-hover:text-white duration-300" />
+      <SlNote className="text-5xl text-violet-950 group-hover:text-white duration-300" />
     ),
     link: "#",
     description:
@@ -35,24 +35,17 @@ const Skills = () => {
   return (
     <>
       <span id="about"></span>
-
       <div className="py-14">
         <div className="container">
           <div className=" grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-2 md:gap-4">
             {skillsData.map((skill) => (
               <div
                 key={skill}
-                className=" card group space-y-3 p-4 rounded-md bg-dark  hover:bg-orange-700 duration-300 transition-all text-white shadow-md"
+                className=" card group space-y-3 p-4 rounded-md bg-dark  hover:bg-violet-950 hover:text-white duration-300 transition-all text-violet-950 shadow-md"
               >
                 <div>{skill.icon}</div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
                 <p>{skill.description}</p>
-                <a
-                  href={skill.link}
-                  className="inline-block text-lg font-semibold py-3 text-orange-700 group-hover:text-white duration-300"
-                >
-                  Saber mais
-                </a>
               </div>
             ))}
           </div>
@@ -61,5 +54,4 @@ const Skills = () => {
     </>
   );
 };
-
 export default Skills;

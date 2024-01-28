@@ -1,10 +1,10 @@
 const Experience = () => {
   return (
-    <div className="text-white py-14">
+    <div className="text-violet-950 py-14">
       <div className="container">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-3">
           {/* first col */}
-          <div className="bg-dark/50 p-4 grid place-items-center">
+          <div className="bg-orange p-4 grid place-items-center">
             <div className="text-center space-y-3">
               <h1 className="text-5xl font-bold">12</h1>
               <p className="text-xl font-semibold">Anos de Experiência</p>
