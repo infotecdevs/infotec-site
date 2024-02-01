@@ -85,7 +85,8 @@ const Header = () => {
         <div className="flex gap-5">
           <Link
             href="/contact"
-            className="font-semibold hidden md:flex text-red-500 border border-red-500 px-4 py-1 rounded-[5px] items-center gap-2 transition duration-200 hover:text-violet-800 hover:scale-110 hover:border-violet-800"
+            className="font-semibold hidden md:flex text-red-500 border border-red-500 px-4 py-1
+             rounded-[5px] items-center gap-2 transition duration-200 hover:text-violet-800 hover:scale-110 hover:border-violet-800"
           >
             <MdOutlineMailOutline />
             E-mail

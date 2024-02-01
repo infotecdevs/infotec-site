@@ -6,10 +6,10 @@ import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "InfotecDevs",
-  description: "Desenvolvimento de sites e sistemas web",
-};
+// export const metadata = {
+//   title: "InfotecDevs",
+//   description: "Desenvolvimento de sites e sistemas web",
+// };
 
 export default function RootLayout({
   children,
