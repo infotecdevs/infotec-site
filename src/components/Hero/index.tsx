@@ -18,18 +18,20 @@ const Hero = () => {
   return (
     <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
       <div className="mx-2 md:mx-5">
-        <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+        <section className="flex flex-col justify-center gap-6 sm:gap-10 md:gap-16 lg:flex-row">
           {/* content - start */}
           <div className="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
             <h1 className="mb-8 text-4xl font-bold text-violet-950 sm:text-5xl md:mb-12 md:text-6xl">
-              Desenvolvedores web
+              Especialistas Next14
             </h1>
-            <p className="mb-8 leading-relaxed text-violet-950 md:mb-12 lg:w-4/5 xl:text-lg">
-              Somos um grupo de desenvolvedores de sites e sistemas web,
-              apaixonados por transformar ideias em realidade digital.
-              Combinamos nossa expertise técnica e criativa para criar soluções
-              digitais inovadoras que atendem às necessidades e superam as
-              expectativas dos nossos clientes.
+            <p className="font-semibold mb-8 leading-relaxed text-violet-gray-900 md:mb-12 lg:w-4/5 xl:text-lg">
+              Criamos seu Site e te colocamos no topo do Google
+              Sites estruturados e pensados para a sua empresa. Com um site profissional você garante mais visibilidade, credibilidade e vendas.
+              <lo className='text-violet-800'>
+                <li>Otimizado para o Google</li>
+                <li>Site pronto em 15 dias</li>
+                <li>Páginas do seu site super rápidas</li>
+              </lo>
             </p>
             <div className="text-5xl flex justify-center items-center gap-16 py-3 text-violet-950">
               <div className="hover:text-violet-800 hover:scale-125">

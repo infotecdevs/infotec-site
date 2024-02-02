@@ -47,13 +47,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full z-10 text-violet-950 md:relative">
-      <nav className="flex justify-between items-center py-1 px-1 md:mx-5">
+      <nav className="flex justify-between items-center py-1 px-24 md:mx-5">
         <div className="flex items-center gap-5">
           <Link href="/">
             <img
-              className={`object-cover object-center rounded w-40 h-full transition-opacity duration-300 ${
-                !scrollingDown ? "opacity-100" : "opacity-0"
-              } md:opacity-100`}
+              className={`object-cover object-center rounded w-40 h-full transition-opacity duration-300 ${!scrollingDown ? "opacity-100" : "opacity-0"
+                } md:opacity-100`}
               alt="imagem"
               src="/images/logo2.png"
             />
@@ -95,25 +94,22 @@ const Header = () => {
         <div className="sm:hidden flex flex-1 justify-end items-center mb-5">
           {toggle ? (
             <IoClose
-              className={`w-[32px] h-[32px] object-contain transition-opacity duration-300 ${
-                scrollingDown ? "opacity-75" : ""
-              }`}
+              className={`w-[32px] h-[32px] object-contain transition-opacity duration-300 ${scrollingDown ? "opacity-75" : ""
+                }`}
               onClick={() => setToggle(!toggle)}
             />
           ) : (
             <GiHamburgerMenu
-              className={`w-[28px] h-[28px] object-contain transition-opacity duration-300 ${
-                scrollingDown ? "opacity-75" : ""
-              }`}
+              className={`w-[28px] h-[28px] object-contain transition-opacity duration-300 ${scrollingDown ? "opacity-75" : ""
+                }`}
               onClick={() => setToggle(!toggle)}
             />
           )}
 
           <div
             id="navbar"
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 bg-violet-950 text-white absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 bg-violet-950 text-white absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar`}
           >
             <div className="list-none flex justify-end items-start flex-1 flex-col gap-1">
               <Link
