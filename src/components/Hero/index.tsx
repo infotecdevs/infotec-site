@@ -24,15 +24,17 @@ const Hero = () => {
             <h1 className="mb-8 text-4xl font-bold text-violet-950 sm:text-5xl md:mb-12 md:text-6xl">
               Especialistas Next14
             </h1>
-            <p className="font-semibold mb-8 leading-relaxed text-violet-gray-900 md:mb-12 lg:w-4/5 xl:text-lg">
-              Criamos seu Site e te colocamos no topo do Google
-              Sites estruturados e pensados para a sua empresa. Com um site profissional você garante mais visibilidade, credibilidade e vendas.
-              <lo className='text-violet-800'>
+            <div className="font-semibold mb-8 leading-relaxed text-violet-gray-900 md:mb-12 lg:w-4/5 xl:text-lg">
+              Criamos seu Site e te colocamos no topo do Google Sites
+              estruturados e pensados para a sua empresa. Com um site
+              profissional você garante mais visibilidade, credibilidade e
+              vendas.
+              <ul className="text-violet-800">
                 <li>Otimizado para o Google</li>
                 <li>Site pronto em 15 dias</li>
                 <li>Páginas do seu site super rápidas</li>
-              </lo>
-            </p>
+              </ul>
+            </div>
             <div className="text-5xl flex justify-center items-center gap-16 py-3 text-violet-950">
               <div className="hover:text-violet-800 hover:scale-125">
                 <AiFillInstagram />

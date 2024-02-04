@@ -50,8 +50,7 @@ const skillsData = [
       <GiNotebook className="text-5xl text-violet-950 group-hover:text-white duration-300" />
     ),
     link: "#",
-    description:
-      "Seu site nas primeira páginas do Google com SEO Marketing",
+    description: "Seu site nas primeira páginas do Google com SEO Marketing",
   },
   {
     name: "Suporte Gerenciado WordPress",
@@ -59,8 +58,7 @@ const skillsData = [
       <FaWordpressSimple className="text-5xl text-violet-950 group-hover:text-white duration-300" />
     ),
     link: "#",
-    description:
-      "Atualizações e Manutenção Mensal em seu site WordPress. ",
+    description: "Atualizações e Manutenção Mensal em seu site WordPress. ",
   },
 ];
 const Skills = () => {
@@ -70,15 +68,15 @@ const Skills = () => {
       <div className="py-14">
         <div className="mx-2 md:mx-5">
           <div className=" grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-2 md:gap-4">
-            {skillsData.map((skill) => (
+            {skillsData.map((skill, i) => (
               <div
-                key={skill}
+                key={i}
                 className=" card group space-y-3 p-4 rounded-md bg-dark  hover:bg-violet-950 hover:text-white duration-300
                  transition-all text-violet-950 shadow-md hover:scale-105"
               >
                 <div>{skill.icon}</div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
-                <p className='font-semibold'>{skill.description}</p>
+                <p className="font-semibold">{skill.description}</p>
               </div>
             ))}
           </div>
