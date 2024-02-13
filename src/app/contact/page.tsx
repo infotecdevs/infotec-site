@@ -34,7 +34,7 @@ const page = () => {
     const { name, email, message } = data;
 
     try {
-      const response = await fetch("/api/email", {
+      const res = await fetch("/api/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,9 @@ const page = () => {
         body: JSON.stringify({ name, email, message }),
       });
 
-      if (response.ok) {
+      const data = await res.json();
+
+      if (data === "success") {
         console.log("Email enviado com sucesso!");
         setSent(true);
       } else {
@@ -51,6 +53,7 @@ const page = () => {
       }
     } catch (e) {
       console.log(e);
+      alert("Erro ao enviar email!");
     }
   };
 
@@ -81,17 +84,17 @@ const page = () => {
                     <div className="text-sm text-green-600">
                       <p>Email enviado com sucesso!</p>
                     </div>
-                    <Link
-                      href="/"
-                      className="flex mx-auto text-white bg-green-400 border-0 py-1
-                      px-1 focus:outline-none hover:bg-green-300 rounded text-sm"
-                    >
-                      voltar
-                    </Link>
                   </div>
                 </div>
               </div>
             </div>
+            <Link
+              href="/"
+              className="flex mx-auto text-white font-medium bg-green-400 border-0 py-1
+               px-3 focus:outline-none hover:bg-green-300 rounded text-sm"
+            >
+              voltar
+            </Link>
           </section>
         ) : (
           <>
@@ -195,3 +198,5 @@ const page = () => {
 };
 
 export default page;
+
+
