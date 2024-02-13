@@ -32,12 +32,12 @@ const page = () => {
 
             <div>
               <a
-                href=""
+                href="https://psicologa-site.vercel.app/"
                 className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
               shadow-lg"
               >
                 <img
-                  src="/images/works/work3.png"
+                  src="/images/works/home-psicologa2.png"
                   loading="lazy"
                   alt="Photo by engin akyurt"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
@@ -45,7 +45,7 @@ const page = () => {
                 />
                 <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
                   <span className="text-lg font-bold text-violet-950 lg:text-xl">
-
+                    Psicóloga Portfólio
                   </span>
                 </div>
               </a>

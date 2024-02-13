@@ -7,30 +7,30 @@ const Experience = () => {
           {/* first col */}
           <div className="bg-white border-spacing-1 p-4 grid place-items-center">
             <div className="text-center space-y-3">
-              <h1 className="text-5xl font-bold">12</h1>
+              <h1 className="text-5xl font-bold">+4</h1>
               <p className="text-xl font-semibold">Anos de Experiência</p>
             </div>
           </div>
           {/* second col */}
           <div className=" grid grid-rows-2 gap-4">
             <div className="bg-white text-center p-6">
-              <h1 className="text-3xl font-bold">60+</h1>
-              <p>Clientes Satisfeitos</p>
+              <h1 className="text-3xl font-bold">+15</h1>
+              <p>Landing Pages</p>
             </div>
             <div className="bg-white text-center p-6">
-              <h1 className="text-3xl font-bold">120+</h1>
+              <h1 className="text-3xl font-bold">+20</h1>
               <p>Projetos Completos</p>
             </div>
           </div>
           {/* Third col */}
           <div className="grid grid-rows-2 gap-4">
             <div className="bg-white text-center p-6">
-              <h1 className="text-3xl font-bold">60+</h1>
-              <p>Clientes Satisfeitos</p>
+              <h1 className="text-3xl font-bold">1</h1>
+              <p>Objetivo: Sua empresa Vendendo mais todos os dias</p>
             </div>
             <div className="bg-white text-center p-6">
-              <h1 className="text-3xl font-bold">120+</h1>
-              <p>Projetos Completos</p>
+              <h1 className="text-3xl font-bold">+100</h1>
+              <p>Cliques transformados em sucesso</p>
             </div>
           </div>
         </div>

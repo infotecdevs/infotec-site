@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills/index";
 import Experience from "@/components/Experience/index";
-import Contact from "@/app/contact/page";
+import Footer from '@/components/Footer/Index';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Experience />
-      <Contact />
+      <Footer />
     </div>
   );
 }
