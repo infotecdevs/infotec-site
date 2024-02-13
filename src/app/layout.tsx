@@ -1,15 +1,15 @@
-"use client";
+// "use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title: "InfotecDevs",
-//   description: "Desenvolvimento de sites e sistemas web",
-// };
+export const metadata = {
+  title: "InfotecDevs",
+  description: "Desenvolvimento de sites e sistemas web",
+};
 
 export default function RootLayout({
   children,
