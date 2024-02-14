@@ -13,10 +13,10 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row items-center justify-center gap-4 mx-4 sm:mx-8 md:mx-20'>
 
           <div className='bg-violet-500 border-violet-500 hover:border-gray-800 p-4 rounded-md h-full flex-1  w-full'>
-            <span className='gap-2'>
-              <FaWhatsapp />
+            <span className='gap-2 flex text-2xl font-bold text-center'>
+              <FaWhatsapp className='text-3xl text-green-800 rounded-full' />WhatsApp
 
-              WhatsApp
+
             </span>
             <p>Fale com a gente</p>
 

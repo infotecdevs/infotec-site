@@ -11,12 +11,12 @@ const Blog = () => {
 
           <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
 
-            <div className='rounded-lg h-[436px] flex flex-col bg-white overflow-hidden border-2 border-gray-800 hover:border-violet-500 opacity-70 hover:opacity-100 transition-all group'>
+            <div className='rounded-lg h-[436px] flex flex-col bg-white overflow-hidden border-2 border-gray-800 hover:border-violet-500 opacity-80 hover:opacity-100 transition-all group'>
               <div className="w-full h-48 overflow-hidden" >
                 <img
                   width={380}
                   height={200}
-                  src="/images/works/home-psicologa2.png"
+                  src="/images/smart-home.jpg"
                   alt="Thumbnail do projeto"
                   className='w-full h-full object-cover group-hover:scale-110 duration-500 transition-all'
                 />
@@ -40,7 +40,7 @@ const Blog = () => {
                 <img
                   width={380}
                   height={200}
-                  src="/images/works/home-psicologa2.png"
+                  src="/images/googleads.jpg"
                   alt="Thumbnail do projeto"
                   className='w-full h-full object-cover group-hover:scale-110 duration-500 transition-all'
                 />
@@ -59,12 +59,13 @@ const Blog = () => {
               </div>
             </div>
 
-            <div className='rounded-lg h-[436px] flex flex-col bg-gray-white overflow-hidden border-2 border-gray-800 hover:border-violet-500 opacity-70 hover:opacity-100 transition-all group'>
+            <div className='rounded-lg h-[436px] flex flex-col bg-gray-white overflow-hidden border-2 border-gray-800
+             hover:border-violet-500 opacity-70 hover:opacity-100 transition-all group'>
               <div className="w-full h-48 overflow-hidden" >
                 <img
                   width={380}
                   height={200}
-                  src="/images/works/home-psicologa2.png"
+                  src="/images/digital-marketing.jpg"
                   alt="Thumbnail do projeto"
                   className='w-full h-full object-cover group-hover:scale-110 duration-500 transition-all'
                 />
@@ -83,12 +84,13 @@ const Blog = () => {
               </div>
             </div>
 
-            <div className='rounded-lg h-[436px] flex flex-col bg-white overflow-hidden border-2 border-gray-800 hover:border-violet-500 opacity-70 hover:opacity-100 transition-all group'>
+            <div className='rounded-lg h-[436px] flex flex-col bg-white overflow-hidden border-2 border-gray-800
+             hover:border-violet-500 opacity-70 hover:opacity-100 transition-all group'>
               <div className="w-full h-48 overflow-hidden" >
                 <img
                   width={380}
                   height={200}
-                  src="/images/works/home-psicologa2.png"
+                  src="/images/people.jpg"
                   alt="Thumbnail do projeto"
                   className='w-full h-full object-cover group-hover:scale-110 duration-500 transition-all'
                 />
