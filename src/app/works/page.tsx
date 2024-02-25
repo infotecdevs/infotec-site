@@ -1,4 +1,56 @@
+import CardWork from "@/components/CardWork";
 import React from "react";
+
+const worksData = [
+  {
+    id: 1,
+    name: "Tatuador Portfólio",
+    urlImage: "/images/works/tatuador-home2.png",
+    link: "https://portfolio-tatuador.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Agência Digital",
+    urlImage: "/images/works/agencia.png",
+    link: "https://agencia-next.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Psicóloga Portfólio",
+    urlImage: "/images/works/home-psicologa2.png",
+    link: "https://psicologa-site.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "Delivery",
+    urlImage: "/images/works/food-delivery.png",
+    link: "https://food-delivery-next-teal.vercel.app/",
+  },
+  {
+    id: 5,
+    name: "Pet Shop",
+    urlImage: "/images/works/pet-shop.png",
+    link: "https://landingpage-pets.vercel.app/",
+  },
+  {
+    id: 6,
+    name: "Desenvolvedor Portfólio",
+    urlImage: "/images/works/rohdev2.png",
+    link: "https://portifoliorfs.vercel.app/",
+  },
+  {
+    id: 7,
+    name: "Imobiliária",
+    urlImage: "/images/works/imobiliaria.png",
+    link: "https://imobiliaria-next-tau.vercel.app/",
+  },
+  {
+    id: 8,
+    name: "Academia",
+    urlImage: "/images/works/academia.png",
+    link: "https://lp-academia.vercel.app/",
+  },
+];
 
 const page = () => {
   return (
@@ -9,177 +61,17 @@ const page = () => {
             Projetos
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
-            <div>
-              <a
-                href="https://portfolio-tatuador.vercel.app/"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/tatuador-home2.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Tatuador Portfólio
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://psicologa-site.vercel.app/"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/home-psicologa2.png"
-                  loading="lazy"
-                  alt="Photo by engin akyurt"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Psicóloga Portfólio
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://portifoliorfs.vercel.app/"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/rohdev2.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200
-                 group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Desenvolvedor Portfólio
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="#"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/work2.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Summer Season
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="#"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/work1.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Summer Season
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="#"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/work4.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Summer Season
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="#"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/work4.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Summer Season
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="#"
-                className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-              shadow-lg"
-              >
-                <img
-                  src="/images/works/work4.png"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-                group-hover:scale-110"
-                />
-                <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-                  <span className="text-lg font-bold text-violet-950 lg:text-xl">
-                    Summer Season
-                  </span>
-                </div>
-              </a>
-            </div>
+            {worksData.map((work) => (
+              <CardWork
+                key={work.id}
+                link={work.link}
+                urlImage={work.urlImage}
+                name={work.name}
+              />
+            ))}
           </div>
         </div>
       </div>
-
     </>
   );
 };
