@@ -4,31 +4,42 @@ type Props = {
   link: string;
   urlImage: string;
   name: string;
+  short: string;
+  description: string;
 };
 
-const CardWork = ({ link, urlImage, name }: Props) => {
+const CardWork = ({ link, urlImage, name, short, description }: Props) => {
   return (
-    <div>
-      <a
-        href={link}
-        className="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 
-    shadow-lg"
-      >
-        <img
-          src={urlImage}
-          loading="lazy"
-          alt="Photo by Austin Wade"
-          className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 
-      group-hover:scale-110"
-        />
-        <div className="relative flex w-full flex-col rounded-lg bg-gray-200 p-1 text-center">
-          <span className="text-lg font-bold text-violet-950 lg:text-xl">
+    <div className='rounded-lg h-[436px] flex flex-col bg-white overflow-hidden border-2 border-gray-800 hover:border-violet-500 opacity-80 hover:opacity-100 transition-all group'>
+      <a href={link}>
+        <div className="w-full h-48 overflow-hidden" >
+          <img
+            width={380}
+            height={200}
+            src={urlImage}
+            alt="Thumbnail do projeto"
+            className='w-full h-full object-cover group-hover:scale-110 duration-500 transition-all'
+          />
+        </div>
+        <div className='flex-1 flex flex-col p-8 '>
+          <span className='font-medium text-gray-800 group-hover:text-violet-500 transition-all'>
+            {short}
+          </span>
+          <span className='mt-2 text-gray-800 line-clamp-4 '>
             {name}
           </span>
+          <span className='text-gray-800 text-sm font-medium block mt-[30px] truncate group-hover:text-violet-500'>
+            {description}
+          </span>
         </div>
+
       </a>
     </div>
+
+
+
   );
 };
 
 export default CardWork;
+

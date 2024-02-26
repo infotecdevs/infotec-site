@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
+import Footer from '@/components/Footer/Index';
 
 type DataForm = {
   name: string;
@@ -190,9 +191,11 @@ const page = () => {
                 </div>
               </div>
             </form>
+
           </>
         )}
       </div>
+      <Footer />
     </section>
   );
 };

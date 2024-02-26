@@ -11,8 +11,7 @@ const skillsData = [
   {
     name: "E-commerce (Loja virtual)",
     icon: (
-      <FaShoppingCart className="text-5xl text-violet-950 group-hover:text-white duration-300" />
-    ),
+      <FaShoppingCart className="text-5xl text-violet-950 group-hover:text-white duration-300" />),
     link: "#",
     description:
       "Sua Loja virtual desenvolvida por especialista em WooCommerce.",
@@ -20,8 +19,7 @@ const skillsData = [
   {
     name: "Site Institucional",
     icon: (
-      <FaLaptopCode className="text-5xl text-violet-950 group-hover:text-white duration-300" />
-    ),
+      <FaLaptopCode className="text-5xl text-violet-950 group-hover:text-white duration-300" />),
     link: "#",
     description:
       "Um site visualmente agradável, rápido e otimizado para o Google",
@@ -38,8 +36,7 @@ const skillsData = [
   {
     name: "Google ADS",
     icon: (
-      <SiGoogleads className="text-5xl text-violet-950 group-hover:text-white duration-300" />
-    ),
+      <SiGoogleads className="text-5xl text-violet-950 group-hover:text-white duration-300" />),
     link: "#",
     description:
       "Aumente suas vendas e alcance novos clientes com o Google Ads.",
@@ -47,8 +44,7 @@ const skillsData = [
   {
     name: "SEO Marketing",
     icon: (
-      <GiNotebook className="text-5xl text-violet-950 group-hover:text-white duration-300" />
-    ),
+      <GiNotebook className="text-5xl text-violet-950 group-hover:text-white duration-300" />),
     link: "#",
     description: "Seu site nas primeira páginas do Google com SEO Marketing",
   },

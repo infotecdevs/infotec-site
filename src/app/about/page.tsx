@@ -10,6 +10,7 @@ import { TbTargetArrow } from "react-icons/tb";
 import { BiSolidBinoculars } from "react-icons/bi";
 
 import Image from "next/image";
+import Footer from '@/components/Footer/Index';
 
 const page = () => {
   return (
@@ -174,6 +175,7 @@ const page = () => {
           </ul>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

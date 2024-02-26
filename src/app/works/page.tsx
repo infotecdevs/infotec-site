@@ -1,55 +1,83 @@
 import CardWork from "@/components/CardWork";
+import Footer from '@/components/Footer/Index';
 import React from "react";
 
 const worksData = [
+
   {
     id: 1,
-    name: "Tatuador Portfólio",
-    urlImage: "/images/works/tatuador-home2.png",
-    link: "https://portfolio-tatuador.vercel.app/",
-  },
-  {
-    id: 2,
-    name: "Agência Digital",
-    urlImage: "/images/works/agencia.png",
-    link: "https://agencia-next.vercel.app/",
-  },
-  {
-    id: 3,
-    name: "Psicóloga Portfólio",
-    urlImage: "/images/works/home-psicologa2.png",
-    link: "https://psicologa-site.vercel.app/",
-  },
-  {
-    id: 4,
-    name: "Delivery",
-    urlImage: "/images/works/food-delivery.png",
-    link: "https://food-delivery-next-teal.vercel.app/",
-  },
-  {
-    id: 5,
-    name: "Pet Shop",
-    urlImage: "/images/works/pet-shop.png",
-    link: "https://landingpage-pets.vercel.app/",
-  },
-  {
-    id: 6,
-    name: "Desenvolvedor Portfólio",
-    urlImage: "/images/works/rohdev2.png",
-    link: "https://portifoliorfs.vercel.app/",
-  },
-  {
-    id: 7,
     name: "Imobiliária",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
     urlImage: "/images/works/imobiliaria.png",
     link: "https://imobiliaria-next-tau.vercel.app/",
   },
   {
-    id: 8,
+    id: 2,
     name: "Academia",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
     urlImage: "/images/works/academia.png",
     link: "https://lp-academia.vercel.app/",
   },
+  {
+    id: 3,
+    name: "Compliance",
+    short: "Advocacia Compliance ",
+    description: 'Esta é uma Landing Page feita para uma advocacia focada em Compliance.',
+    urlImage: "/images/works/compliance.png",
+    link: "https://landing-page-adv-compliance.vercel.app/",
+  },
+
+  {
+    id: 4,
+    name: "Tatuador Portfólio",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
+    urlImage: "/images/works/tatuador-home2.png",
+    link: "https://portfolio-tatuador.vercel.app/",
+  },
+  {
+    id: 5,
+    name: "Agência Digital",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
+    urlImage: "/images/works/agencia.png",
+    link: "https://agencia-next.vercel.app/",
+  },
+  {
+    id: 6,
+    name: "Psicóloga Portfólio",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
+    urlImage: "/images/works/home-psicologa2.png",
+    link: "https://psicologa-site.vercel.app/",
+  },
+  {
+    id: 7,
+    name: "Delivery",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
+    urlImage: "/images/works/food-delivery.png",
+    link: "https://food-delivery-next-teal.vercel.app/",
+  },
+  {
+    id: 8,
+    name: "Desenvolvedor Portfólio",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
+    urlImage: "/images/works/rohdev2.png",
+    link: "https://portifoliorfs.vercel.app/",
+  },
+  {
+    id: 9,
+    name: "Pet Shop",
+    short: "Landing Page",
+    description: 'Esta é uma Landing Page feita para um tatuador dando enfase em suas habilidaes e seu espaço de trabalho exepcionais',
+    urlImage: "/images/works/pet-shop.png",
+    link: "https://landingpage-pets.vercel.app/",
+  },
+
 ];
 
 const page = () => {
@@ -67,11 +95,14 @@ const page = () => {
                 link={work.link}
                 urlImage={work.urlImage}
                 name={work.name}
+                short={work.short}
+                description={work.description}
               />
             ))}
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
